@@ -1,24 +1,9 @@
-# 한국투자증권 KIS API 기반 투자 거장 스크리너
-# 환경변수 설정 파일
-# 이 파일을 .env로 복사한 후 실제 값으로 수정하세요
+# KIS API 설정
+KIS_APP_KEY=your_app_key_here
+KIS_APP_SECRET=your_app_secret_here
+KIS_ACCOUNT_NO=00000000-00
+KIS_ENVIRONMENT=vps  # vps(모의) 또는 real(실전)
 
-# Flask 애플리케이션 설정
-FLASK_APP=app.py
-FLASK_ENV=development
-FLASK_DEBUG=True
-SECRET_KEY=investment-screener-secret-key-2024
-
-# 서버 설정
-HOST=0.0.0.0
-PORT=5000
-
-# 한국투자증권 KIS API 설정 (선택사항)
-# https://apiportal.koreainvestment.com 에서 발급받으세요
-KIS_API_KEY=
-KIS_SECRET_KEY=
-KIS_ACCOUNT_NO=
-KIS_ENVIRONMENT=vps
-
-# 로깅 설정
-LOG_LEVEL=INFO
-LOG_FILE=logs/app.log
+# Flask 설정
+FLASK_SECRET_KEY=your-secret-key-here
+FLASK_PORT=5000
